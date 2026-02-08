@@ -3,6 +3,5 @@ python-docx
 
 gigachat
 
-git+https://github.com/org/gigachat.git@main
 
 
