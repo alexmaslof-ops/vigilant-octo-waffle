@@ -3,5 +3,6 @@ gigachat
 python-docx
 
 
-https://github.com/org/repo.gif
+https://github.com/org/repo.git
 x-access-token/oauth2/maslof_bot
+
