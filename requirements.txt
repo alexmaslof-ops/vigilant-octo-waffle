@@ -1,8 +1,8 @@
 python-telegram-bot==22.0
-gigachat
 python-docx
 
+gigachat
 
-https://github.com/org/repo.git
-x-access-token/oauth2/maslof_bot
+git+https://github.com/org/gigachat.git@main
+
 
