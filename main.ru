@@ -5,7 +5,7 @@ from gigachat import GigaChat
 
 # Инициализируем GigaChat с API‑ключом
 gc = GigaChat(
-    credentials="MDE5YzM4YWQtNTgxNy03NDA1LThjNWEtOTg4N2MwZDczNTgwOjllMDYyOTk4LTBiYmItNDY1OC1hY2JhLWNiMDMxMWUxYTYwYg==",
+    credentials="GIGA CHAT",
     verify_ssl_certs=False
 )
 
@@ -42,7 +42,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"Ошибка при суммаризации: {e}")
 
 def main():
-    TELEGRAM_TOKEN = "8411436758:AAHDtS2y11sWwrxeWXahGIFA43DGkDF4Mws"
+    TELEGRAM_TOKEN = "TELEGRAMM TOKEN"
     application = Application.builder().token(TELEGRAM_TOKEN).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
@@ -51,3 +51,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
