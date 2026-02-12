@@ -3,9 +3,9 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from gigachat import GigaChat
 
 
-# Инициализируем GigaChat с API‑ключом
+# Инициализация GigaChat
 gc = GigaChat(
-    credentials="GIGA CHAT",
+    credentials=config("GIGACHAT_API_KEY"),
     verify_ssl_certs=False
 )
 
@@ -43,7 +43,7 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     TELEGRAM_TOKEN = "TELEGRAMM TOKEN"
-    application = Application.builder().token(TELEGRAM_TOKEN).build()
+    app = Application.builder().token(config("TELEGRAM_TOKEN")).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, echo))
     print("Бот запущен. Ожидание сообщений...")
@@ -51,4 +51,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
