@@ -1,7 +1,5 @@
-python-telegram-bot==22.0
-gigachat
-python-docx
+python-decouple==3.8
+python-telegram-bot==20.7
+gigachat==0.3.0
 
-
-git+https://github.com/alexmaslof-ops/vigilant-octo-waffle.git@main
 
